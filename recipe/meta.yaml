@@ -14,7 +14,7 @@ source:
 
 build:
   skip: True  # [not linux64]
-  number: 3
+  number: 4
   script_env:
     - KENLM_MAX_ORDER=7
 

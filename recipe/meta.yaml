@@ -25,7 +25,7 @@ requirements:
     - cmake
     - libgomp # openmp
   host:
-    - pip
+    - pip <23
     - python
     - boost-cpp
     - eigen

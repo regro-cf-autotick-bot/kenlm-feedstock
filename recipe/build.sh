@@ -1,3 +1,5 @@
+#!/bin/bash
+set -ex
 
 BDIR="./build"
 
@@ -13,4 +15,5 @@ popd
 rm -rf $BDIR
 
 # Install python module
-$PYTHON -m pip install . --install-option="--max_order $KENLM_MAX_ORDER"
+python setup.py bdist_wheel --install-option="--max_order $KENLM_MAX_ORDER"
+pip install dist/kenlm*.whl

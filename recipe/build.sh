@@ -13,4 +13,4 @@ popd
 rm -rf $BDIR
 
 # Install python module
-$PYTHON -m pip install . --install-option="--max_order $KENLM_MAX_ORDER"
+MAX_ORDER="$KENLM_MAX_ORDER" $PYTHON -m pip install .

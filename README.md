@@ -1,11 +1,11 @@
-About kenlm
-===========
+About kenlm-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kenlm-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/kpu/kenlm
 
 Package license: LGPL-2.1-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kenlm-feedstock/blob/main/LICENSE.txt)
 
 Summary: Faster and Smaller Language Model Queries
 
@@ -30,42 +30,35 @@ Current build status
               <td>linux_64_python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16068&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/kenlm-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/kenlm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_python3.7.____cpython</td>
+              <td>linux_64_python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16068&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/kenlm-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.7.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16068&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/kenlm-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/kenlm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16068&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/kenlm-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/kenlm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.9.____73_pypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16068&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/kenlm-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/kenlm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16068&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/kenlm-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/kenlm-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
@@ -86,14 +79,14 @@ Current release info
 Installing kenlm
 ================
 
-Installing `kenlm` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `kenlm` from the `conda-forge/label/kenlm_dev` channel can be achieved by adding `conda-forge/label/kenlm_dev` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/kenlm_dev
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `kenlm` can be installed with `conda`:
+Once the `conda-forge/label/kenlm_dev` channel has been enabled, `kenlm` can be installed with `conda`:
 
 ```
 conda install kenlm
@@ -108,26 +101,26 @@ mamba install kenlm
 It is possible to list all of the versions of `kenlm` available on your platform with `conda`:
 
 ```
-conda search kenlm --channel conda-forge
+conda search kenlm --channel conda-forge/label/kenlm_dev
 ```
 
 or with `mamba`:
 
 ```
-mamba search kenlm --channel conda-forge
+mamba search kenlm --channel conda-forge/label/kenlm_dev
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search kenlm --channel conda-forge
+mamba repoquery search kenlm --channel conda-forge/label/kenlm_dev
 
 # List packages depending on `kenlm`:
-mamba repoquery whoneeds kenlm --channel conda-forge
+mamba repoquery whoneeds kenlm --channel conda-forge/label/kenlm_dev
 
 # List dependencies of `kenlm`:
-mamba repoquery depends kenlm --channel conda-forge
+mamba repoquery depends kenlm --channel conda-forge/label/kenlm_dev
 ```
 
 
@@ -149,7 +142,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance

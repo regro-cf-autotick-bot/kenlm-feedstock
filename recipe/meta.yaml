@@ -1,5 +1,5 @@
 {% set name = "kenlm" %}
-{% set commit = "0760f4c4df76f3286656e7232dc3ad6495248bc2" %}
+{% set commit = "e504a4d61c413873e7d5f13d8ac4890bd4dae36c" %}
 {% set version = commit[:7] %}
 {% set sha1value = commit %}
 
@@ -14,7 +14,7 @@ source:
 
 build:
   skip: True  # [not linux64]
-  number: 3
+  number: 0
   script_env:
     - KENLM_MAX_ORDER=7
 

@@ -14,13 +14,14 @@ source:
 
 build:
   skip: True  # [not linux64]
-  number: 0
+  number: 1
   script_env:
     - KENLM_MAX_ORDER=7
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - make
     - cmake
     - libgomp # openmp
@@ -31,14 +32,14 @@ requirements:
     - eigen
     - zlib
     - bzip2
-    - xz
+    - liblzma-devel
   run:
     - python
     - boost-cpp
     - eigen
     - zlib
     - bzip2
-    - xz
+    - liblzma-devel
 
 test:
   imports:
